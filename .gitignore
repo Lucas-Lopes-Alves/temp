@@ -6,3 +6,6 @@ Tesnix/
 *.o
 bin/
 *.tar
+isos/
+bin/
+obj/

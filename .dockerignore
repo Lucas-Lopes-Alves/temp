@@ -1,8 +1,10 @@
 .vscode/
-build/
+bin/
+isos/
+obj/
 Dockerfile*
 dockerfile*
-temp
+temp/
 .git/
 *.yml
 .gitignore

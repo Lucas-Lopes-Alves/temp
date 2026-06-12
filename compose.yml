@@ -1,9 +1,9 @@
 services:
-  run:
-    image: tesnix
+  tesnix:
+    image: tesnix-final
     environment:
       - DISPLAY=${DISPLAY}
+      - XAUTHORITY=/.Xauthority
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-    stdin_open: true
-    tty: true
+      - ${HOME}/.Xauthority:/.Xauthority:ro
