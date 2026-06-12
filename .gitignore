@@ -5,3 +5,4 @@ Tesnix/
 *.iso
 *.o
 bin/
+*.tar
