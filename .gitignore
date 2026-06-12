@@ -1,0 +1,7 @@
+cross/
+Tesnix/
+.vscode/
+*.elf
+*.iso
+*.o
+bin/

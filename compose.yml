@@ -1,0 +1,9 @@
+services:
+  run:
+    image: tesnix
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    stdin_open: true
+    tty: true
