@@ -1,6 +1,6 @@
 FROM debian:bookworm
 
-COPY ./cross ./cross
+COPY ./cross/* ./cross/
 ENV PATH=/cross/bin/:${PATH}
 RUN apt-get update && apt-get install -y \
 grub-pc-bin \
@@ -12,5 +12,3 @@ libmpc3 \
 libsdl2-2.0-0 \
 libgtk-3-0 \
 && rm -rf /var/lib/apt/lists/*
-
-CMD [ "bash" ]

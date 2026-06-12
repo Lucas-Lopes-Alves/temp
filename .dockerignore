@@ -1,2 +1,8 @@
 .vscode/
 build/
+Dockerfile*
+dockerfile*
+temp
+.git/
+*.yml
+.gitignore
