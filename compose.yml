@@ -1,6 +1,7 @@
 services:
   tesnix:
     image: tesnix-final
+    container_name: tesnix
     environment:
       - DISPLAY=${DISPLAY}
       - XAUTHORITY=/.Xauthority
