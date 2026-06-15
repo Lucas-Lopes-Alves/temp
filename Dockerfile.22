@@ -1,0 +1,9 @@
+FROM node
+
+COPY teste.js /javascript/
+
+WORKDIR /javascript
+
+ENV PATH=/usr/bin/node:$PATH
+
+ENTRYPOINT ["node", "teste.js"]

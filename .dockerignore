@@ -8,3 +8,5 @@ temp/
 .git/
 *.yml
 .gitignore
+*.tar
+build/
