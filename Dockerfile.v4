@@ -1,0 +1,18 @@
+FROM debian:trixie-slim
+
+RUN echo "PS1='\[\e[0;32m\]\u@\h:\w\$\[\e[0m\] '" > /root/.bashrc \
+&& apt-get update && apt-get install -y \
+qemu-system-x86 \
+grub-pc-bin \
+make \
+xorriso \
+libisl23 \
+libmpc3 \
+libsdl2-2.0-0 \
+libgtk-3-0
+
+COPY ./cross-container /cross
+
+ENV PATH=$PATH:/cross/bin
+
+WORKDIR /tesnix

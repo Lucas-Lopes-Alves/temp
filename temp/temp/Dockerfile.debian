@@ -1,0 +1,14 @@
+FROM debian:trixie
+
+COPY ./cross ./cross
+ENV PATH=/cross/bin/:${PATH}
+RUN apt-get update && apt-get install -y \
+grub-pc-bin \
+qemu-system-x86 \
+make \
+xorriso \
+libisl23 \
+libmpc3 \
+libsdl2-2.0-0 \
+libgtk-3-0 \
+&& rm -rf /var/lib/apt/lists/*
