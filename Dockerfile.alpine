@@ -1,0 +1,29 @@
+FROM alpine:3.20 AS base
+
+RUN apk update \
+&& apk add build-base \
+gmp-dev \
+mpfr-dev \
+mpc1-dev \
+isl-dev \
+musl-dev \
+libgcc \
+libstdc++ \
+texinfo \
+flex \
+bison
+
+FROM alpine:3.20
+
+RUN apk update \
+&& apk add bash \
+qemu-system-i386 \
+grub \
+make \
+xorriso \
+isl25 \
+sdl2 \
+gtk+3.0 \
+&& echo "PS1='\[\e[0;32m\]\u@\h:\w\$\[\e[0m\] '" >> ~/.bashrc
+
+ENTRYPOINT [ "bash" ]

@@ -1,0 +1,7 @@
+FROM tesnix:base
+
+WORKDIR /tesnix
+
+RUN apt-get update && apt-get install -y \
+guile-3.0 \
+libdebuginfod1t64

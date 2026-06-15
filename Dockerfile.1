@@ -1,0 +1,9 @@
+FROM tesnix:base
+
+WORKDIR /tesnix
+
+COPY . /tesnix/
+
+RUN make
+
+ENTRYPOINT [ "make", "run" ]
