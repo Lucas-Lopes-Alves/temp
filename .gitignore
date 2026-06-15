@@ -9,3 +9,6 @@ bin/
 isos/
 bin/
 obj/
+build/isos
+build/obj
+build/bin
