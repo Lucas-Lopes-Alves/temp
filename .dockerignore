@@ -9,5 +9,4 @@ temp/
 *.yml
 .gitignore
 *.tar
-build/
 *.js
